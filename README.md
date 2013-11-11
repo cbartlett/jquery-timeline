@@ -1,15 +1,12 @@
-# jQuery glideToggle
+# jQuery Timeline
 
-Unobtrusive jQuery plugin that converts a select OR a checkbox into a toggle.
+Timeline component supporting touch events and scrolling.
 
-    $('input:checkbox, select').glideToggle();
+    $('ul').timeline();
 
 ### Options/Defaults:
     {
         className: '', // in case you need to add a class for styling/scoping
-        toggleText: true // set this to false if you want the options to display outside of the toggle
+        playheadTemplate: '<div><div></div></div>', // pass in custom markup depending on your playhead needs
+        scroll: true // set to false to disable scroll control over timeline
     }
-
-### Notes:
-
-IE < 9 requires a compatible jQuery (< 2) version and a 'quirksmode' DOCTYPE to render inline-block elements properly.
